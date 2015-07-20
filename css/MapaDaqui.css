@@ -1,0 +1,39 @@
+
+.jumbotron{
+height:500px;
+background-image: url("/Users/lucasneumanndeantonio/Dropbox/_Code/MapaDaqui/fundo.jpg");
+background-position: center;
+background-size:100%;
+filter-contrast:0.1;
+z-index:2;
+}
+
+
+h1{
+
+	font-family: 'Source Sans Pro'r;
+
+	font-weight:bolder;
+	text-transform:Uppercase;
+	color:white;
+}
+
+p{
+font-family: 'Arvo';
+font-weight: lighter;
+}
+
+#tagline{
+	margin-top:30px;
+	font-family: 'Arvo';
+	color:white;
+	font-weight: lighter;
+	
+}
+
+#marca{
+	position:relative;
+	width:250px;
+
+}
+
