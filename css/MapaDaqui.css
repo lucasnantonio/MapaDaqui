@@ -1,21 +1,45 @@
 
 .jumbotron{
 height:500px;
-background-image: url("/Users/lucasneumanndeantonio/Dropbox/_Code/MapaDaqui/fundo.jpg");
-background-position: center;
-background-size:100%;
-filter-contrast:0.1;
-z-index:2;
+
+}
+
+.bg{
+	position:absolute;
+	height:500px;
+	padding:0px;
+	overflow:hidden;
+	//z-index: -1;
 }
 
 
+
 h1{
-
 	font-family: 'Source Sans Pro'r;
-
 	font-weight:bolder;
 	text-transform:Uppercase;
 	color:white;
+}
+
+h2{
+	font-family: "Arvo";
+	font-size: 20px;
+	font-weight: bolder;
+
+}
+
+
+#arguments div{
+text-align: center;
+padding: 20px 50px 20px 50px;
+
+
+}
+
+.img-circle{
+
+	width:200px;
+	height: 200px;
 }
 
 p{
