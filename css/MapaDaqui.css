@@ -1,45 +1,39 @@
+body{
+	background:#253237;
+}
 
 .jumbotron{
-height:500px;
+
+	margin: 0px;
+	padding:0px;
 
 }
 
 .bg{
 	position:absolute;
-	height:500px;
+	height:100%;
 	padding:0px;
 	overflow:hidden;
-	//z-index: -1;
+
 }
 
 
-
-h1{
-	font-family: 'Source Sans Pro'r;
-	font-weight:bolder;
-	text-transform:Uppercase;
-	color:white;
-}
 
 h2{
-	font-family: "Arvo";
-	font-size: 20px;
-	font-weight: bolder;
-
+	font-family: "Raleway";
+	font-weight: normal;
+font-size: 26px;
+line-height: 1.2em;
+	color:white;
+	opacity: 0.6;
 }
 
-
-#arguments div{
-text-align: center;
-padding: 20px 50px 20px 50px;
-
-
-}
-
-.img-circle{
-
-	width:200px;
-	height: 200px;
+h3{
+	font-family: "Raleway";
+	font-size: 14px;
+	font-weight: normal;
+	color:white;
+		opacity: 0.6;
 }
 
 p{
@@ -47,17 +41,52 @@ font-family: 'Arvo';
 font-weight: lighter;
 }
 
-#tagline{
-	margin-top:30px;
-	font-family: 'Arvo';
-	color:white;
-	font-weight: lighter;
-	
-}
-
 #marca{
 	position:relative;
-	width:200px;
+	width:150px;
+	padding-top: 15%;
 
 }
+
+#mc_embed_signup{
+	margin-top:20%;
+	font-family: "Raleway";
+	color:white;
+}
+
+#mc_embed_signup input[type="text"], 
+#mc_embed_signup input[type="email"]{
+width:100%;
+background:rgba(255,255,255,0.1);
+border:1px solid white;
+border-radius:4px;
+margin:10px 0px 0px 0px;
+height:50px;
+padding-left:20px;
+}
+
+#mc_embed_signup input[type="email"]:focus{
+border:2px solid white;
+box-shadow: 0 0 0px;
+}
+
+#mc-embedded-subscribe{
+width:100%;
+background:#ED287E;
+color:white;
+border:0px solid white;
+border-radius:4px;
+margin:10px 0px 0px 0px;
+height:50px;
+padding-left:20px;
+font-weight: bolder;
+text-transform: Uppercase;
+}
+
+#mc-embedded-subscribe:hover{
+
+background:#E32E7D;
+
+}
+
 
