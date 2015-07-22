@@ -19,8 +19,8 @@ body{
 }
 
 .fb-like{
-	margin-left:20px;
-
+margin-top:10%;
+margin-left:15px;
 }
 
 h2{
@@ -51,9 +51,8 @@ font-weight: lighter;
 	padding-top: 15%;
 
 }
-
 #mc_embed_signup{
-	margin-top:30%;
+	margin-top:20%;
 	font-family: "Raleway";
 	color:white;
 }
