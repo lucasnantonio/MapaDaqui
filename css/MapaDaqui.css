@@ -18,7 +18,9 @@ body{
 
 }
 
-
+.fb-like{
+	background:red;
+}
 
 h2{
 	font-family: "Raleway";
@@ -50,7 +52,7 @@ font-weight: lighter;
 }
 
 #mc_embed_signup{
-	margin-top:20%;
+	margin-top:40%;
 	font-family: "Raleway";
 	color:white;
 }
