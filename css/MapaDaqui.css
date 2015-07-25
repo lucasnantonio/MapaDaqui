@@ -83,7 +83,7 @@ border:2px solid white;
 box-shadow: 0 0 0px;
 }
 
-#mc-embedded-subscribe, #mc-embedded-subscribe:visited {
+#mc-embedded-subscribe{
 width:100%;
 background:#ED287E;
 color:white;
@@ -97,14 +97,12 @@ text-transform: Uppercase;
 }
 
 #voltar {
-width:50%;
 background:#ED287E;
 color:white;
 border:0px solid white;
 border-radius:4px;
 margin:40px 0px 0px 0px;
-height:50px;
-padding-left:20px;
+padding:10px 30px 10px 30px;
 font-weight: bolder;
 text-transform: Uppercase;
 }
@@ -121,6 +119,10 @@ background:#E32E7D;
 
 #contato:hover{
 	color:#ED287E;
+}
+
+#contato:visited{
+	color:white;
 }
 
 
