@@ -23,6 +23,16 @@ margin-top:10%;
 margin-left:15px;
 }
 
+
+p a{
+	font-family: "Raleway";
+	font-weight: normal;
+font-size: 14px;
+line-height: 1.2em;
+	color:white;
+	opacity: 0.6;
+}
+
 h2{
 	font-family: "Raleway";
 	font-weight: normal;
@@ -90,6 +100,10 @@ text-transform: Uppercase;
 
 background:#E32E7D;
 
+}
+
+#contato{
+	padding-left:15px;
 }
 
 
