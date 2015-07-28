@@ -50,21 +50,19 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4";
+  js.src = "http://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <div class="col-sm-12 bg">  
-          <img id="main-image" class="img-responsive" src="img/fundo.jpg">
-        </div>
+        <div id="main-image" class="col-sm-12 bg">  
+          <!--<img id="main-image" src="img/fundo.jpg">-->
+        </div> 
 
         <div id"sidebar" class="col-xs-12 col-sm-6 col-md-4">
 
           <div  class="container">
-
-                  
 
             <img id="marca" src="img/Mapa_Daqui_Marca.png">
             <h2 id="tagline">Um jeito colaborativo de mapear e sinalizar nossas cidades</h2>

@@ -1,6 +1,12 @@
 body{
 	background:#253237;
 	height: 100%;
+	background-image: url("http://www.mapadaqui.com/img/fundo.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center top;
+background-attachment: fixed;
+
 }
 
 .jumbotron{
@@ -10,9 +16,14 @@ body{
 
 }
 
+#main-image{
+
+}
+
 .bg{
 	position:absolute;
 	height:100%;
+//	width:100%;
 	padding:0px;
 	overflow:auto;
 
@@ -124,5 +135,7 @@ background:#E32E7D;
 #contato:visited{
 	color:white;
 }
+
+
 
 
