@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,6 +56,25 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<!---Facebook App-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '430235993828355',
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <div id="main-image" class="col-sm-12 bg">  
@@ -90,8 +110,12 @@
           </div>
 
           <div  class="contanier">
-           <div class="fb-like" data-href="https://mapadaqui.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-           <a id="contato" href="mailto:contatomapadaqui@gmail.com?Subject=Contato" target="_top">Contato</a>
+          <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
           </div>
 
     
