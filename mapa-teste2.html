@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<TITLE>Test Input </TITLE>
+
+<script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+
+<style>
+    @page{
+    size:30cm 60cm;
+    margin:0;
+  }
+
+  @media screen{
+    body { margin:0; padding:0;  }
+    form{height:150px; width:100%;}
+    input{width:100px; height:44px;}
+    #map-main { display: block; position:relative;  height:100px; width:100%;}
+    #map-roll { display: block; position:relative;  height:100px; width:100%; }
+    #MapaDaqui_Header{ height:100px; background-color: red;}
+  }
+
+
+  @media print{  
+    form, button{display:none;}
+
+    #map-main { position:absolute; top:5cm; height:300px; width:297mm; }
+    #map-roll { position:absolute; top:30cm; height:10cm; width:10cm; }
+    #MapaDaqui_Header{ position: absolute; top:0; height:300px; width:100%; background-color: red;}
+
+}
+
+</style>
+
+<!-- Script do Form -->  
+<script LANGUAGE="JavaScript">
+var user_address = "Rua Mourato Coelho 784";
+function readText (form) {
+    user_address = form.inputbox.value;
+    geocoder.query(Lucas, showMap);
+}
+</script>
+<!-- Fim do Script do Form -->
+
+
+</HEAD>
+<BODY>
+
+<!-- Form Signup -->  
+<form NAME="myform" ACTION="" >
+Enter something in the box: <BR>
+<input TYPE="text" NAME="inputbox" VALUE="Endereço"><P>
+<input TYPE="button" NAME="button1" VALUE="Buscar" onClick="readText(this.form);">
+</form>
+<!-- Fim Form Signup -->
+
+<!-- Imprimir -->  
+<button onclick = "window.print();">Imprimir</button>
+
+<div id="MapaDaqui_Header">Lucas</div>
+<div id='map-main'></div>
+<div id='map-roll'></div>
+
+<!-- Mapbox Script -->  
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoibWFwYWRhcXVpIiwiYSI6IjBiNDkyMjNjOTI2MGYzOGM3YmVlMTdmYjUxZWM3YjNlIn0.wgKsb3mWtdUBhA8CYRWvKQ';
+var geocoder = L.mapbox.geocoder('mapbox.places'),
+    map_main = L.mapbox.map('map-main', 'mapadaqui.n9h6f62k', {
+  zoomControl: false
+});
+    map_roll = L.mapbox.map('map-roll', 'mapadaqui.n9h6f62k', {
+  zoomControl: false
+});
+
+
+geocoder.query(user_address, showMap);
+
+function showMap(err, data) {
+        map_main.setView([data.latlng[0], data.latlng[1]], 17);
+        map_roll.setView([data.latlng[0], data.latlng[1]], 15);  
+}
+
+map_main.on('moveend', follow).on('zoomend', follow);
+map_roll.on('moveend', follow).on('zoomend', follow);
+
+</script>
+
+<!-- Fim Mapbox Script -->  
+
+</BODY>
+</HTML>

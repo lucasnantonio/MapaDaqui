@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<TITLE>Test Input </TITLE>
+<meta charset="utf-8">
+<script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+<link src='css/print_page.css' rel='stylesheet' />
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src='js/MapaDaqui.js' type="text/javascript"></script>
+
+
+
+<!-- Script do Form -->  
+<script LANGUAGE="JavaScript">
+var user_address = "Rua Mourato Coelho 784";
+function readText (form) {
+    user_address = form.inputbox.value;
+    geocoder.query(user_address, showMap);
+}
+</script>
+<!-- Fim do Script do Form -->
+
+
+
+
+
+</HEAD>
+<BODY>
+
+<!-- Form Signup -->  
+<form NAME="myform">
+Enter something in the box: <BR>
+<input TYPE="text" NAME="inputbox" VALUE="Endereço"><P>
+<input TYPE="button" NAME="button1" VALUE="Buscar" onClick="readText(this.form);">
+<input id="submit" TYPE="button" name="imprimir" value="Imprimir">
+</form>
+<!-- Fim Form Signup -->
+
+<!-- Imprimir -->  
+
+
+<div id="header"></div>
+<div id='map-main'></div>
+
+
+<!-- Mapbox Script -->  
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoibWFwYWRhcXVpIiwiYSI6IjBiNDkyMjNjOTI2MGYzOGM3YmVlMTdmYjUxZWM3YjNlIn0.wgKsb3mWtdUBhA8CYRWvKQ';
+var geocoder = L.mapbox.geocoder('mapbox.places'),
+    map_main = L.mapbox.map('map-main', 'mapadaqui.n9h6f62k', {
+  zoomControl: false
+});
+
+
+geocoder.query(user_address, showMap);
+
+function showMap(err, data) {
+        map_main.setView([data.latlng[0], data.latlng[1]], 17);
+        
+}
+</script>
+
+<!-- Fim Mapbox Script -->  
+
+</BODY>
+</HTML>

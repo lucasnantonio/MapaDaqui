@@ -1,0 +1,13 @@
+<style>
+
+
+  @media screen{
+    body { margin:0; padding:0;  }
+    form{height:150px; width:100%;}
+    input{width:100px; height:44px;}
+    #map-main { display: block; position:relative;  height:500px; width:500px;}
+    #header{background:red; height:50px; width:100%;}
+  }
+
+
+</style>
