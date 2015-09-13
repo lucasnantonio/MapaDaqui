@@ -1,7 +1,7 @@
 body{
 	background:#253237;
 	height: 100%;
-	background-image: url("http://www.mapadaqui.com/img/fundo.jpg");
+	background-image: url("../img/fundo-gut.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center top;
@@ -96,7 +96,7 @@ box-shadow: 0 0 0px;
 
 #mc-embedded-subscribe{
 width:100%;
-background:#ED287E;
+background:#ED4C50;
 color:white;
 border:0px solid white;
 border-radius:4px;
@@ -120,7 +120,8 @@ text-transform: Uppercase;
 
 #mc-embedded-subscribe:hover{
 
-background:#E32E7D;
+background:#ED4C50;
+opacity:0.8;
 
 }
 
